@@ -49,15 +49,15 @@ static PyMethodDef arthmatic_funcs[] = {
     }
 };
 
-static struct PyModuleDef fputsmodule = {
+static struct PyModuleDef arthmatic_module = {
     PyModuleDef_HEAD_INIT,
-    "fputs",
-    "Python interface for the fputs C library function",
+    "arthmatic",
+    "Python interface for the C library function",
     -1,
     arthmatic_funcs
 };
 
 PyMODINIT_FUNC PyInit_arthmatic(void)
 {
-   return PyModule_Create(&fputsmodule);
+   return PyModule_Create(&arthmatic_module);
 }
